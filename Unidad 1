@@ -1,0 +1,125 @@
+# UTN-TUPaD-P1
+# Programa que imprime el mensaje"hola mundo!" en pantalla
+
+print("Hola Mundo!")
+
+
+# Ejercicio n2
+# Programa que saluda al usuario por su nombre
+
+# Pedir el nombre al usuario
+nombre = input("Ingresa tu nombre: ")
+
+# Imprimir el saludo usando print f
+print(f"Hola {nombre}!")
+
+
+# Ejercicio n3
+# Programa que pide los datos del usuario y muestra el mensaje
+
+# Pedimos los datos al usuario
+nombre = input("Ingresa tu nombre: ")
+apellido = input("Ingresa tu apellido: ")
+edad = input("Ingresa tu edad: ")
+residencia = input("Ingresa tu lugar de residencia: ")
+
+# Usando print f
+print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}.")
+
+
+#4
+import math  # Para usar el valor de pi
+
+# Pedir el radio al usuario
+radio = float(input("Ingresa el radio del círculo: "))
+
+# Calcular el área y el perímetro
+area = math.pi * radio**2
+perimetro = 2 * math.pi * radio
+
+# Mostrar resultados
+print(f"El área del círculo es: {area:.2f}")
+print(f"El perímetro del círculo es: {perimetro:.2f}")
+
+
+
+# ejercicio n5
+# Pedir la cantidad de segundos al usuario
+segundos = int(input("Ingresa la cantidad de segundos: "))
+
+# Calcular las horas equivalentes
+horas = segundos / 3600  # 1 hora = 3600 segundos
+
+# Mostrar el resultado
+print(f"{segundos} segundos equivalen a {horas:.2f} horas.")
+
+
+
+# Ejercicio n6
+# Pedir el número al usuario
+numero = int(input("Ingresa un número: "))
+
+# Imprimir la tabla de multiplicar del númer
+print(f"Tabla de multiplicar del {numero}:")
+for i in range(1, 11):
+    resultado = numero * i
+    print(f"{numero} x {i} = {resultado}")
+
+
+
+# Ejercicio n7
+# Pedir dos números enteros distintos de 0
+num1 = int(input("Ingresa el primer número (distinto de 0): "))
+num2 = int(input("Ingresa el segundo número (distinto de 0): "))
+
+# Verificar que no sean 0
+if num1 == 0 or num2 == 0:
+    print("Error: Los números deben ser distintos de 0.")
+else:
+    # Operaciones
+    suma = num1 + num2
+    resta = num1 - num2
+    multiplicacion = num1 * num2
+    division = num1 / num2  # División normal
+
+    # Mostrar resultados
+    print(f"Suma: {suma}")
+    print(f"Resta: {resta}")
+    print(f"Multiplicación: {multiplicacion}")
+    print(f"División: {division}")
+
+
+    # Ejercico n8
+# pedimos al usuario que ingrese su peso y altura
+peso = float(input("Por favor, ingrese su peso en kilogramos: "))
+altura = float(input("Por favor, ingrese su altura en metros: "))
+
+# Realizamos el cálculo del IMC 
+imc = round(peso / altura**2, 2)
+
+# Imprimimos por pantalla el resultado
+print(f"Su IMC es de: {imc}.")
+
+
+
+# ejercicio n9
+# Le pedimos al usuario que ingrese la temperatura en grados Celsius
+temperatura_ceslsius = float(input("Por favor, una temperatura en grados Celsius"))
+# Haemos la conversion de grados Celsius a Fahrenheit
+temperatura_fahrenheit = round((9/5) * temperatura_fahrenheit +32, 2)
+#Resultado por pantalla
+print(f"{temperatura_ceslsius} °C equivalen a {temperatura_fahrenheit} °F.")
+
+
+
+# Ejercicio n10
+# Pedimos al usuario que ingrese 3 numeros
+numero_a = float(input("Por favor, ingrese el primer número: "))
+numero_b = float(input("Por favor, ingrese el segundo número: "))
+numero_c = float(input("Por favor, ingrese el tercer número: "))
+# Se realiza la suma y luego la almacenamos en la variable suma_a_b_c
+suma_a_b_c = numero_a + numero_b + numero_c
+# Se calcula el promedio y se almacena en la variable promedio_a_b_c
+promedio_a_b_c = round(suma_a_b_c/3, 2)
+# Se imprime en pantalla el resultado
+print(f"El promedio de los números ingresados es {promedio_a_b_c}.")
